@@ -1,6 +1,8 @@
 import io
 import os
 import base64
+import sys
+sys.path.append("/app/.heroku/opencv/lib/python2.7/site-packages")
 import cv2   
 import numpy as np
 
