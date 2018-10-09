@@ -1,7 +1,7 @@
 import io
 import os
 import base64
-import cv2   
+#import cv2   
 import numpy as np
 
 from io import BytesIO
