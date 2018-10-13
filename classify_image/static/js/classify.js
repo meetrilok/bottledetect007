@@ -84,7 +84,10 @@ loadStats = function(jsonData)
   var blueMarkup=`
   <div class="card">
   <div class="card-content black-text stat-card">
-  <h5>Any Blue color object present: </h5>`+bluecol+`
+  <div class="row">
+      <div class="col s6"><h5 style="
+    line-height: 3.4rem;
+">Any Blue color object present: </h5></div><div class="col s2 offset-s4"><h4 style="color:Red;">`+bluecol+`</h4></div></div>
   </div>
   
   </div>`;
@@ -100,16 +103,24 @@ loadStats = function(jsonData)
 	  {
 	
       var markup =`
-      <div class="card">
+	  <div class="card">
         <div class="card-content black-text stat-card">
-          <span class="card-title capitalize">` + category + `</span>
-          <p style="float: left;">Confidence</p>
-          <p style="float: right;"><b>` + percent + `%</b></p>
-          <div class="progress">
-            <div class="determinate" style="width: ` + percent + `%;"></div>
-          </div>
+		<div class="row">
+      <div class="col s6"><h5 style="
+    line-height: 3.4rem;
+">Bottle Present in the picture: </h5></div><div class="col s2 offset-s4"><h4 style="color:Red;">Yes</h4></div></div>
+    <div class="row">
+		<div class="col s2"><h5 style="
+    line-height: 3.4rem;
+">Type of Bottle </h5></div>
+    <div class="col s8 center-align"><span class="card-title capitalize" style="
+    line-height: 4.5rem;
+">`+category+`</span></div>
+ <div class="col s1 "><p style="float: left;">Confidence: </p><h5 style="color:Red;"><p style="color: Red;"><b>`+percent+`%</b></p></h5></div>
+</div>
+</div>
         </div>
-      </div>`;
+	  `;
       $("#stat-table").append(markup);
 	  break;
 	  }
@@ -118,7 +129,10 @@ loadStats = function(jsonData)
 	  var noBottleMarkup=`
   <div class="card">
   <div class="card-content black-text stat-card">
-  <h5>No Bottle Present in the picture</h5>
+  
+      <div class="col s6"><h5 style="
+    line-height: 3.4rem;
+">Bottle Present in the picture: </h5></div><div class="col s2 offset-s4"><h4 style="color:Red;">No</h4></div></div>
   </div>
   
   </div>`;
@@ -136,7 +150,10 @@ loadStats = function(jsonData)
 	  var noBottleMarkup2=`
   <div class="card">
   <div class="card-content black-text stat-card">
-  <h5>No Bottle Present in the picture</h5>
+  <div class="col s6"><h5 style="
+    line-height: 3.4rem;
+">Bottle Present in the picture: </h5></div><div class="col s2 offset-s4"><h4 style="color:Red;">No</h4></div></div>
+  </div>
   </div>
   
   </div>`;
