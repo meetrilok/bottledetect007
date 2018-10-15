@@ -76,7 +76,7 @@ def classify_api(request):
         classify_result = tf_classify(tmp_f, int(request.POST.get('k', MAX_K)))
         tmp_f.close()
         if checkBlueColor(im)=='Yes':
-            data["blue_color"]="yes"
+            data["blue_color"]="Yes"
         else:
             data["blue_color"]="No"
 
@@ -158,7 +158,7 @@ def checkBlueColor(imgb64):
     #print file path for no blue detect. 
     if(contours==[]):
         #print(imgPath)
-        return "None"
+        return "No"
     else:
         for pic, contour in enumerate(contours):
             
