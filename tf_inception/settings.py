@@ -28,6 +28,10 @@ ALLOWED_HOSTS = [
     'bottledetect007.herokuapp.com',
     'bottledetect007.herokuapp.com',
     '127.0.0.1',
+    '35.231.19.29',
+    '40.84.128.194',
+    'bottledetect007.southcentralus.cloudapp.azure.com',
+    'bottledetect007.com'
 ]
 
 # Application definition
