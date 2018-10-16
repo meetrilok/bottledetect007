@@ -30,7 +30,8 @@ var imagefile=null;
           loadStats(data)
         },
 		error: function(request, status,error){
-			 alert(request.responseText);
+			 alert("Please use another image");
+			 location.reload();
 		}
       }).always(function() {
         modal.modal('close');
