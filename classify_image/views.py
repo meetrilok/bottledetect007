@@ -205,8 +205,12 @@ def checkRedColor(imgb64):
     
     #print('hsv set')
     #define Range of colors # Red color
-    red_lower=np.array([0,100,0],np.uint8)
-    red_upper=np.array([10,255,255],np.uint8)
+##    red_lower=np.array([0,100,0],np.uint8)
+##    red_upper=np.array([10,255,255],np.uint8)
+##    red_lower=np.array([0,0,255],np.uint8)
+##    red_upper=np.array([0,0,153],np.uint8)
+    red_lower=np.array([136,87,111],np.uint8)
+    red_upper=np.array([180,255,255],np.uint8)
     #print('limit set')
 
 
@@ -230,7 +234,7 @@ def checkRedColor(imgb64):
             
             area = cv2.contourArea(contour)
             
-            if(area>100):
+            if(area>300):
                 
                 if(count==0):
 

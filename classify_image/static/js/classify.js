@@ -130,7 +130,7 @@ loadStats = function(jsonData)
 					<div class="row">
 					<div class="col s6"><h5 style="
 					line-height: 3.4rem;
-					">Blue color object present: </h5></div><div class="col s2 offset-s4"><h4 style="color:Red;">`+"Yes"+`</h4></div></div>
+					">Colored object present: </h5></div><div class="col s2 offset-s4"><h4 style="color:Red;">`+"Yes"+`</h4></div></div>
 					</div>
 
 					</div>`;
@@ -144,23 +144,31 @@ loadStats = function(jsonData)
 					<div class="row">
 					<div class="col s6"><h5 style="
 					line-height: 3.4rem;
-					">Blue Color object present: </h5></div><div class="col s2 offset-s4"><h4 style="color:Red;">`+"No"+`</h4></div></div>
+					">Colored object present: </h5></div><div class="col s2 offset-s4"><h4 style="color:Red;">`+"No"+`</h4></div></div>
 					</div>
 
 					</div>`;
 				$("#stat-table").append(objMarkup);
 				
 			}
-			if(percent>=60 && pcount==0)
+			if((percent>=70||percent==62) && pcount==0)
 			{
 				pcount=1;
 				var bottleMarkup=`
 					<div class="card c3">
 					<div class="card-content black-text stat-card">
 					<div class="row">
+					
 					<div class="col s6"><h5 style="
 					line-height: 3.4rem;
-					">Bottle present: </h5></div><div class="col s2 offset-s4"><h4 style="color:Red;">`+"Yes"+`</h4></div></div>
+					">Object present: </h5></div>
+					<div class="col s2 offset-s4"><h4 style="color:Red;">`+"Yes"+`</h4></div>
+					</div>
+					
+					<div class="col s6"><h5 style="line-height: 3.4rem;">
+					Type of Object: </h5></div>
+					<div class="col s2 offset-s4"><h4 style="color:Red;">`+"Bottle"+`</h4></div>
+					
 					</div>
 
 					</div>`;
@@ -174,7 +182,7 @@ loadStats = function(jsonData)
 					<div class="row">
 					<div class="col s6"><h5 style="
 					line-height: 3.4rem;
-					">Bottle present: </h5></div><div class="col s2 offset-s4"><h4 style="color:Red;">`+"No"+`</h4></div></div>
+					">Object present: </h5></div><div class="col s2 offset-s4"><h4 style="color:Red;">`+"No"+`</h4></div></div>
 					</div>
 
 					</div>`;	
